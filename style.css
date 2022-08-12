@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  padding-top: 100px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.player,
+.computer,
+.sub_one,
+.win,
+.loss,
+.tie {
+  display: flex;
+}
+
+.sub_one {
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+.scores {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  padding-top: 20px;
+  background-color: rgb(69, 69, 109);
+  width: 70%;
+  height: 100%;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(155, 155, 182);
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+
+#start_game {
+  padding-top: 50px;
+  cursor: pointer;
+}
